@@ -13,8 +13,8 @@ SCClone is a software for intra-tumor heterogeneity inference from single-cell D
 To build binary, do as follows:
 
 ```
-tar -zxvf SCClone.tar.gz
-cd SCClone
+tar -zxvf scclone.tar.gz
+cd scclone
 cmake .
 make
 ```
