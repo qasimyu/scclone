@@ -3,9 +3,6 @@ cmake_minimum_required(VERSION 3.0)
 # Build the matrix library
 include_directories(matrix)
 
-# Build the dkm library
-include_directories(dkm/include)
-
 # Build the split library
 include_directories(split)
 add_library(split split/split.cpp)
@@ -17,10 +14,6 @@ add_library(config config/Config.cpp)
 # Build the mathfunc library
 include_directories(mathfunc)
 add_library(mathfunc mathfunc/MathFunc.cpp)
-
-# Build the pca library
-include_directories(pca)
-add_library(pca pca/PCA.cpp)
 
 # Build the threadpool library
 include_directories(threadpool)
@@ -39,4 +32,4 @@ target_link_libraries(inputparser mydefine)
 # Build the hetcaller library
 include_directories(hetcaller)
 add_library(hetcaller hetcaller/HetCaller.cpp)
-target_link_libraries(hetcaller mydefine split pca)
+target_link_libraries(hetcaller mydefine split)

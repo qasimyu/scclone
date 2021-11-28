@@ -9,13 +9,11 @@ add_subdirectory(lib)
 
 include_directories (
 	${SCClone_SOURCE_DIR}/lib/config
-	${SCClone_SOURCE_DIR}/lib/dkm/include
 	${SCClone_SOURCE_DIR}/lib/hetcaller
 	${SCClone_SOURCE_DIR}/lib/inputparser
 	${SCClone_SOURCE_DIR}/lib/mathfunc
 	${SCClone_SOURCE_DIR}/lib/matrix
 	${SCClone_SOURCE_DIR}/lib/mydefine
-	${SCClone_SOURCE_DIR}/lib/pca
 	${SCClone_SOURCE_DIR}/lib/split
 	${SCClone_SOURCE_DIR}/lib/threadpool
 )
